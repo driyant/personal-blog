@@ -94,6 +94,7 @@ header p {
     font-size: 0.75em;
     margin-bottom:1em;
     font-family: 'Didact Gothic', sans-serif;
+    width: 50px;
 }
 
   /* ----------------- End Header ----------------- */
