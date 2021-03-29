@@ -11,6 +11,12 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
 html {
   color: #222;
   font-size: 1em;
@@ -18,14 +24,14 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+    * Remove text-shadow in selection highlight:
+    * https://twitter.com/miketaylr/status/12228805301
+    *
+    * Vendor-prefixed and regular ::selection selectors cannot be combined:
+    * https://stackoverflow.com/a/16982510/7133471
+    *
+    * Customize the background color to match your design.
+    */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -38,8 +44,8 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
- */
+    * A better looking default horizontal rule
+    */
 
 hr {
   display: block;
@@ -51,10 +57,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+    * Remove the gap between audio, canvas, iframes,
+    * images, videos and the bottom of their containers:
+    * https://github.com/h5bp/html5-boilerplate/issues/440
+    */
 
 audio,
 canvas,
@@ -66,8 +72,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+    * Remove default fieldset styles.
+    */
 
 fieldset {
   border: 0;
@@ -76,452 +82,438 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+    * Allow only vertical resizing of textareas.
+    */
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-  
-  /* Base Syle  */
+      Author's custom styles
+      ========================================================================== */
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid orange; */
-  }
+/* Base Syle  */
 
-  html {
-    font-size: 18px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid orange; */
+}
 
-  body {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    font-family: 'Noto Sans', sans-serif;
-  }
+html {
+  font-size: 18px;
+}
 
-  h1 {
-    font-size: 2rem;
-  }
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+}
 
-  p {
-    font-size: 1rem;
-  }
+h1 {
+  font-size: 2rem;
+}
 
-  .container {
-    max-width: 80%;
-  }
+p {
+  font-size: 1rem;
+}
 
-  img {
-    width: 100%;
-    height: auto;
-    transition: all .4s ease-in-out;
-   
-  }
+.container {
+  max-width: 80%;
+}
 
-  img:hover {
-    transform: scale(1.1);
-  }
+img {
+  width: 100%;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+}
 
-  /* ----------------- Navigation ----------------- */
+img:hover {
+  transform: scale(1.1);
+}
 
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    height: 7em;
-    border-radius: 0.8em;
-  }
+/* ----------------- Navigation ----------------- */
 
-  nav a.logo {
-    font-weight: bold;
-    width: 100%;
-    font-size: 1.5rem;
-    border-bottom: 2px solid white;
-    margin-bottom: 1em;
-    text-decoration: none;
-    text-align: center;
-  }
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 7em;
+  border-radius: 0.8em;
+}
 
-  nav ul li {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-    border-radius: 0.8em;
-    border: 1px solid orange;
-    width: 4.5em;
-    height: auto;
-    font-family: 'Source Sans', serif;
-  }
+nav a.logo {
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.5rem;
+  border-bottom: 2px solid white;
+  margin-bottom: 1em;
+  text-decoration: none;
+  text-align: center;
+}
 
-  nav ul li:hover {
-    background-color: salmon;
-  }
+nav ul li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border-radius: 0.8em;
+  border: 1px solid orange;
+  width: 4.5em;
+  height: auto;
+  font-family: "Source Sans", serif;
+}
 
-  nav ul li a:hover{
-    color:white;
-  }
+nav ul li:hover {
+  background-color: salmon;
+}
 
-  nav ul li a {
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-  }
-  
+nav ul li a:hover {
+  color: white;
+}
 
+nav ul li a {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
 
-  /* ----------------- End Navigation ----------------- */
+/* ----------------- End Navigation ----------------- */
 
-  /* ----------------- Header ----------------- */
+/* ----------------- Header ----------------- */
 
-  header {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    height: 300px;
-    background: 
-    url('https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_960_720.jpg') no-repeat center;
-    background-size: cover;
-    opacity: 80%;
-    color: white;
-  }
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 300px;
+  background: url("https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_960_720.jpg")
+    no-repeat center;
+  background-size: cover;
+  opacity: 80%;
+  color: white;
+}
 
-  header h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 0;
-  }
+header h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0;
+}
 
-  header p {
-    margin-top: 1em;
-    width: 50%;
-    align-items: center;
-    font-size: 0.75em;
-    margin-bottom:1em;
-    font-family: 'Didact Gothic', sans-serif;
-    align-items: center;
-  }
+header p {
+  margin-top: 1em;
+  width: 50%;
+  align-items: center;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  font-family: "Didact Gothic", sans-serif;
+  align-items: center;
+}
 
-  /* ----------------- End Header ----------------- */
+/* ----------------- End Header ----------------- */
 
-  /* ----------------- Main ----------------- */
+/* ----------------- Main ----------------- */
 
-  main h2 {
-    border-left: 2px solid orange;
-    width:100%;
-    font-family: 'Nanum Myeongjo', serif;
-    margin: 1em 0 0 0.8em;
-    padding-left: 0.5em;
-  }
+main h2 {
+  border-left: 2px solid orange;
+  width: 100%;
+  font-family: "Nanum Myeongjo", serif;
+  margin: 1em 0 0 0.8em;
+  padding-left: 0.5em;
+}
 
-  main {
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 2em;
-    grid-template-areas: 
+main {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2em;
+  grid-template-areas:
     "rc"
     "fva"
     "fta"
     "asd"
     "asd";
-  }
+}
 
-  main section {
-    border: 1px solid grey;
-  }
+main section {
+  border: 1px solid grey;
+}
 
-  main .recent-article {
-    margin-top: 1.5em;
-  }
+main .recent-article {
+  margin-top: 1.5em;
+}
 
-  /* main .blog-content a.category:hover {
-    transform: translateY(-3px);
-    transition: .2s;
-  } */
+/* main .blog-content a.category:hover {
+       transform: translateY(-3px);
+       transition: .2s;
+     } */
 
-  main figure > img {
-    border-radius: 2em;
-    padding: 0.8em;
-  }
+main figure > img {
+  border-radius: 2em;
+  padding: 0.8em;
+}
 
-  main .blog-content h3 {
-    margin:0.5em 0.5em;
-  }
+main .blog-content h3 {
+  margin: 0.5em 0.5em;
+}
 
-  main .blog-content a.category  {
-    width: 5em;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-    top: 60px;
-    left: 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    opacity: 0.6;
-    padding: 5px 20px;
-    font-size: .8rem;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+main .blog-content a.category {
+  width: 5em;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  top: 60px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  padding: 5px 20px;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  main .blog-content p.date-posted {
-    font-size: .7rem;
-    margin-left: 1em;
-  }
+main .blog-content p.date-posted {
+  font-size: 0.7rem;
+  margin-left: 1em;
+}
 
- 
+main .blog-content > p {
+  margin-left: 0.8em;
+  margin-bottom: 1.5em;
+}
 
-  main .blog-content > p {
-    margin-left: 0.8em;
-    margin-bottom: 1.5em;
-  }
+main .blog-content p.continue-reading {
+  text-align: right;
+  margin-bottom: 1em;
+}
 
-  main .blog-content p.continue-reading {
-    text-align: right;
-    margin-bottom: 1em;
-  }
+main .blog-content p.continue-reading a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: darkgray;
+}
 
-  main .blog-content p.continue-reading a {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: darkgray;
-  }
+main aside > div {
+  margin-bottom: 2em;
+}
 
-  /* main section {
-    box-shadow: 3px 9px #9b9b9b;
-  } */
+main aside .about-me {
+  /* height: 70vh; */
+  border: 1px solid grey;
+  overflow: hidden;
+}
 
-  main aside > div {
-    margin-bottom: 2em;
-  }
+main aside .about-me p {
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
 
-  main aside .about-me {
-    /* height: 70vh; */
-    border: 1px solid grey;
-    overflow: hidden;
-  }
-  
-  main aside .category {
-    height: 40vh;
-  }
+main aside .category {
+  height: 40vh;
+}
 
-  main aside .subs-form {
-    height: 30vh;
-  }
+main aside .subs-form {
+  height: 30vh;
+}
 
-  main aside h4 {
-    width:80%;
-    border-left: 2px solid orange;
-    padding: 0.5em 0 0 0.5em;
-    margin: .5em 0 .5em .5em;
-    font-family: 'Nanum Myeongjo', serif;
-  }
+main aside h4 {
+  width: 80%;
+  border-left: 2px solid orange;
+  padding: 0.5em 0 0 0.5em;
+  margin: 0.5em 0 0.5em 0.5em;
+  font-family: "Nanum Myeongjo", serif;
+}
 
-  main aside p {
-    padding-left: .8em;
-    font-size: .875rem;
-  }
-  
-  main aside ul li {
-    font-size: .85rem;
-    list-style-type: none;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    background-color: rgb(250, 123, 101);
-    border-radius: 1em;
-    margin: 1em 0 0 1em;
-    opacity: 0.8;
-  }
+main aside ul li {
+  font-size: 0.85rem;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  background-color: rgb(250, 123, 101);
+  border-radius: 1em;
+  margin: 1em 0 0 1em;
+  opacity: 0.8;
+}
 
-  main aside ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    padding: 5px 17px;
-    border-radius: 12px;
-    font-size: .8em;
-    color: white;
-    text-align: center;
-    opacity: 0.6;
-    padding: 5px 17px;
-  }
+main aside ul li a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px 17px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  padding: 5px 17px;
+}
 
-  main .blog-content a.category:hover {
-    transform: translateY(-3px);
-    transition: .2s;
-  }
+main .blog-content a.category:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
 
-  main .recent-article,
-  main .favourite-article,
-  main .featured-article {
-    background-color: rgb(255, 255, 255);
-  }
-  
- 
-  main .blog-wrapper h3 {
-    text-transform: capitalize;
-  }
+main .recent-article,
+main .favourite-article,
+main .featured-article {
+  background-color: rgb(255, 255, 255);
+}
 
-  main figure > img {
-    border-radius: 2em;
-    padding: 0.8em;
-   
-  }
+main .blog-wrapper h3 {
+  text-transform: capitalize;
+}
 
-  main .blog-content p {
-    font-size: 0.875rem;
-    color: gray;
-    font-family: 'Quicksand', sans-serif;
-  }
+main figure > img {
+  border-radius: 2em;
+  padding: 0.8em;
+}
 
-  main p.continue-reading a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: darkgray;
-    margin-right: 0.5em;
-  }
+main .blog-content p {
+  font-size: 0.875rem;
+  color: gray;
+  font-family: "Quicksand", sans-serif;
+}
 
-  main aside h4 {
-    width:80%;
-    border-left: 2px solid orange;
-    padding: 0.5em 0 0 0.5em;
-    margin: .5em 0 .5em .5em;
-    font-family: 'Nanum Myeongjo', serif;
-  }
+main p.continue-reading a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: darkgray;
+  margin-right: 0.5em;
+}
 
-  main aside p {
-    padding-left: .8em;
-    font-size: .875rem;
-  }
-  
-  main aside ul li {
-    font-size: .85rem;
-    list-style-type: none;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    background-color: rgb(250, 123, 101);
-    border-radius: 1em;
-    margin: 1em 0 0 1em;
-    opacity: 0.8;
-  }
+main aside h4 {
+  width: 80%;
+  border-left: 2px solid orange;
+  padding: 0.5em 0 0 0.5em;
+  margin: 0.5em 0 0.5em 0.5em;
+  font-family: "Nanum Myeongjo", serif;
+}
 
-  main aside ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    padding: 5px 17px;
-  }
+main aside p {
+  padding-left: 0.8em;
+  font-size: 0.875rem;
+}
 
-  main aside .subs-form form {
-    margin-top: 2em;
-  }
+main aside ul li {
+  font-size: 0.85rem;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  background-color: rgb(250, 123, 101);
+  border-radius: 1em;
+  margin: 1em 0 0 1em;
+  opacity: 0.8;
+}
 
-  main aside .subs-form form input[type='email'] {
-    width: 100%;
-  }
+main aside ul li a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px 17px;
+}
 
-  main aside .subs-form form input[type='submit'] {
-    margin-top: 1em;
-    width: 100%;
-    background-color: salmon;
-    height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
+main aside .subs-form form {
+  margin-top: 2em;
+}
 
-  /* ----------------- End Main ----------------- */
+main aside .subs-form form input[type="email"] {
+  width: 100%;
+  height: 30px;
+}
 
-  /* ----------------- Footer ----------------- */
+main aside .subs-form form input[type="submit"] {
+  margin-top: 1em;
+  width: 100%;
+  background-color: salmon;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* ----------------- End Main ----------------- */
 
-  footer .footer-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row: auto;
-    grid-gap: 1em;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-  }
+/* ----------------- Footer ----------------- */
 
-  footer .footer-row h4 {
-    font-family: 'Nanum Myeongjo', serif;
-  }
+footer .footer-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto;
+  grid-gap: 1em;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
 
-  footer .footer-row .contact,
-  footer .footer-row .archive,
-  footer .footer-row .social {
-    padding:1em;
-  }
+footer .footer-row h4 {
+  font-family: "Nanum Myeongjo", serif;
+}
 
+footer .footer-row .contact,
+footer .footer-row .archive,
+footer .footer-row .social {
+  padding: 1em;
+}
 
-  footer .footer-row .contact address p,
-  footer .footer-row .archive ul li,
-  footer .footer-row .social ul li {
-    padding-top: 1em;
-    font-size: .875rem;
-    font-style: normal;
-  }
+footer .footer-row .contact address p,
+footer .footer-row .archive ul li,
+footer .footer-row .social ul li {
+  padding-top: 1em;
+  font-size: 0.875rem;
+  font-style: normal;
+}
 
-  footer .footer-row .social ul li,
-  footer .footer-row .archive ul li {
-    list-style: none;
-  }
+footer .footer-row .social ul li,
+footer .footer-row .archive ul li {
+  list-style: none;
+}
 
-  footer .footer-row .archive ul li a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Source Sans Pro', sans-serif
-  }
+footer .footer-row .archive ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
 
-  footer .footer-row .archive ul li a i.icon {
-    margin-right: .5em;
-  }  
+footer .footer-row .archive ul li a i.icon {
+  margin-right: 0.5em;
+}
 
-  footer .footer-row .social ul li {
-    height: 2em;
-    width: 2em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40%;
-  }
+footer .footer-row .social ul li {
+  height: 2em;
+  width: 2em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+}
 
-  footer p.copyright {
-    text-align: center;
-    margin-top: 1.5em;
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 0.875rem;
-  }
+footer p.copyright {
+  text-align: center;
+  margin-top: 1.5em;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 0.875rem;
+}
 
-
-  /* ----------------- End Footerr ----------------- */
+/* ----------------- End Footerr ----------------- */
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+      Helper classes
+      ========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+    * Hide visually and from screen readers
+    */
 
 .hidden,
 [hidden] {
@@ -529,13 +521,13 @@ textarea {
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+    * Hide only visually, but have it available for screen readers:
+    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    *
+    * 1. For long content, line feeds are not interpreted as spaces and small width
+    *    causes content to wrap 1 word per line:
+    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    */
 
 .sr-only {
   border: 0;
@@ -551,10 +543,10 @@ textarea {
 }
 
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+    * Extends the .sr-only class to allow the element
+    * to be focusable when navigated to via the keyboard:
+    * https://www.drupal.org/node/897638
+    */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -568,24 +560,24 @@ textarea {
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+    * Hide visually and from screen readers, but maintain layout
+    */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+    * Clearfix: contain floats
+    *
+    * For modern browsers
+    * 1. The space content is one way to avoid an Opera bug when the
+    *    `contenteditable` attribute is included anywhere else in the document.
+    *    Otherwise it causes space to appear at the top and bottom of elements
+    *    that receive the `clearfix` class.
+    * 2. The use of `table` rather than `block` is only necessary if using
+    *    `:before` to contain the top-margins of child elements.
+    */
 
 .clearfix::before,
 .clearfix::after {
@@ -598,153 +590,149 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+      EXAMPLE Media Queries for Responsive Design.
+      These examples override the primary ('mobile first') styles.
+      Modify as content requires.
+      ========================================================================== */
 
-   /* Tablet Screen 768px */  
-  @media screen and (min-width:768px) {
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-    }
-
-    nav a.logo {
-      width: 20%;
-      border-bottom: none;
-      text-decoration: none;
-    }
-
-    nav ul li {
-      display: inline-flex;
-      font-size: 1rem;
-    }
-
-    header h1 {
-      font-size: 2rem;
-    }
-    header p {
-      font-size: 1.3rem;
-    }
-
-    main .blog-content p {
-      font-size: 1.1rem;
-    }
-
-    main aside .about-me p {
-      font-size: 1rem;
-    }
-
-    footer .footer-row{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-    }
-
-    footer .footer-row .archive {
-      border-left: 1px solid grey;
-      border-right: 1px solid grey;
-    }
-    
+/* Tablet Screen 768px */
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
   }
 
-  /* Desktop Screen 1200px */  
-  @media only screen and (min-width: 1200px) {
+  nav a.logo {
+    width: 20%;
+    border-bottom: none;
+    text-decoration: none;
+  }
 
-    .container {
-      max-width: 70%;
-    }
+  nav ul li {
+    display: inline-flex;
+    font-size: 1rem;
+  }
 
-    nav a.logo {
-      text-align: left;
-    }
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1.3rem;
+  }
 
-    nav ul li {
-      margin-right: 1em;
-      font-size: .875em;
-      font-size: 'Noto Sans', sans-serif ;
-    }
+  main .blog-content p {
+    font-size: 1.1rem;
+  }
 
-    nav ul li a {
-      text-align: center;
-      padding: 5px 13p;
-    }
+  main aside .about-me p {
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+  }
 
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto auto auto;
-      grid-gap: 1.5em;
-      grid-template-areas: 
-      'rc rc asd'
-      'fa fa asd'
-      'fea fea asd';
-    }
+  footer .footer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
 
-    main section.recent-post {
-      grid-area: rc;
-      margin-top: 0;
-    }
-
-    main section.favourite-post {
-      grid-area: fa;
-    }
-
-    main section.favourite-post .blog-wrapper {
-      display: flex;
-      flex-flow: row wrap;
-    }
-
-    main .blog-content p {
-      font-size: 0.875rem;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    main section.favourite-post .blog-wrapper .blog-content {
-      flex-basis: 50%;
-    }
-
-    main section.featured-post {
-      grid-area: fea;
-    }
-
-    main section.featured-post .blog-wrapper {
-      display: flex;
-      flex-flow: row wrap;
-    }
-
-    main section.featured-post .blog-wrapper .blog-content {
-      flex-basis: 33.3%;
-    }
-
-
-    main aside.sidebar {
-      grid-area: asd;
-    }
-
-    main aside.category {
-      grid-area: sd;
-    }
-
-    footer {
-      margin-top: 2em;
-    }
-
-    footer .footer-row .archive {
-      border-left: 1px solid grey;
-      border-right: 1px solid grey;
-    }
+  footer .footer-row .archive {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
 }
 
+/* Desktop Screen 1200px */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 70%;
+  }
+
+  nav a.logo {
+    text-align: left;
+  }
+
+  nav ul li {
+    margin-right: 1em;
+    font-size: 0.875em;
+    font-size: "Noto Sans", sans-serif;
+  }
+
+  nav ul li a {
+    text-align: center;
+    padding: 5px 13p;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+      "rc rc asd"
+      "fa fa asd"
+      "fea fea asd";
+  }
+
+  main section.recent-post {
+    grid-area: rc;
+    margin-top: 0;
+  }
+
+  main section.favourite-post {
+    grid-area: fa;
+  }
+
+  main section.favourite-post .blog-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  main .blog-content p {
+    font-size: 0.875rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  main section.favourite-post .blog-wrapper .blog-content {
+    flex-basis: 50%;
+  }
+
+  main section.featured-post {
+    grid-area: fea;
+  }
+
+  main section.featured-post .blog-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  main section.featured-post .blog-wrapper .blog-content {
+    flex-basis: 33.3%;
+  }
+
+  main aside.sidebar {
+    grid-area: asd;
+  }
+
+  main aside.category {
+    grid-area: sd;
+  }
+
+  footer {
+    margin-top: 2em;
+  }
+
+  footer .footer-row .archive {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+}
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+      Print styles.
+      Inlined to avoid the additional HTTP request:
+      https://www.phpied.com/delay-loading-your-print-css/
+      ========================================================================== */
 
 @media print {
   *,
@@ -771,9 +759,9 @@ textarea {
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+      * Don't show links that are fragment identifiers,
+      * or use the `javascript:` pseudo protocol
+      */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -790,9 +778,9 @@ textarea {
   }
 
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+      * Printing Tables:
+      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+      */
   thead {
     display: table-header-group;
   }
@@ -814,4 +802,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
