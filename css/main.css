@@ -186,12 +186,13 @@ textarea {
 
   header {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     height: 300px;
     background: 
-    url('https://images.pexels.com/photos/543609/pexels-photo-543609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center;
+    url('https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_960_720.jpg') no-repeat center;
     background-size: cover;
     opacity: 80%;
     color: white;
@@ -217,8 +218,11 @@ textarea {
   /* ----------------- Main ----------------- */
 
   main h2 {
-    width:80%;
+    border-left: 2px solid orange;
+    width:100%;
     font-family: 'Nanum Myeongjo', serif;
+    margin: 1em 0 0 0.8em;
+    padding-left: 0.5em;
   }
 
   main {
@@ -235,12 +239,26 @@ textarea {
     "asd";
   }
 
+  main section {
+    border: 1px solid grey;
+  }
+
   main .recent-article {
     margin-top: 1.5em;
   }
 
-  main > section, aside {
-    border-radius: 1em;
+  /* main .blog-content a.category:hover {
+    transform: translateY(-3px);
+    transition: .2s;
+  } */
+
+  main figure > img {
+    border-radius: 2em;
+    padding: 0.8em;
+  }
+
+  main .blog-content h3 {
+    margin:0.5em 0.5em;
   }
 
   main .blog-content a.category  {
@@ -259,50 +277,29 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* main .blog-content a.category:hover {
-    transform: translateY(-3px);
-    transition: .2s;
-  } */
-
-  main .recent-article,
-  main .favourite-article,
-  main .featured-article {
-    background-color: rgb(255, 255, 255);
-  }
-  
-  main figure > img {
-    border-radius: 2em;
-    padding: 0.8em;
-   
-  }
-
-  main .post-content p {
-    font-size: 0.875rem;
-    color: gray;
-    font-family: 'Quicksand', sans-serif;
-  }
-
-  main .post-content p.date-posted {
+  main .blog-content p.date-posted {
     font-size: .7rem;
+    margin-left: 1em;
   }
 
-  main .post-content > h3 {
+ 
+
+  main .blog-content > p {
     margin-left: 0.8em;
+    margin-bottom: 1.5em;
   }
 
-  main .post-content p.continue-reading {
+  main .blog-content p.continue-reading {
     text-align: right;
     margin-bottom: 1em;
   }
 
-  main .post-content p.continue-reading a {
+  main .blog-content p.continue-reading a {
     text-decoration: none;
     text-transform: capitalize;
-    font-style: italic;
     font-size: 0.8em;
     font-weight: bold;
     color: darkgray;
-    margin-right: 0.5em
   }
 
   /* main section {
@@ -310,7 +307,21 @@ textarea {
   } */
 
   main aside > div {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
+  }
+
+  main aside .about-me {
+    /* height: 70vh; */
+    border: 1px solid grey;
+    overflow: hidden;
+  }
+  
+  main aside .category {
+    height: 40vh;
+  }
+
+  main aside .subs-form {
+    height: 30vh;
   }
 
   main aside h4 {
@@ -373,44 +384,18 @@ textarea {
     padding: 0.8em;
    
   }
-  
-  main .post-content figure > img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-  }
 
-  main .post-content p {
+  main .blog-content p {
     font-size: 0.875rem;
     color: gray;
     font-family: 'Quicksand', sans-serif;
   }
 
-  main .post-content p.date-posted {
-    font-size: .7rem;
-  }
-
-  main .post-content > h3 {
-    margin-left: 0.8em;
-  }
-
-  main .post-content p.continue-reading {
-    text-align: right;
-    margin-bottom: 1em;
-    font-size: 0.8em;
-    font-weight: bold;
-  }
-
   main p.continue-reading a {
     text-decoration: none;
     text-transform: capitalize;
-    
     color: darkgray;
     margin-right: 0.5em;
-  }
-
-  main .post-content p.continue-reading a i {
-    margin-left: 0.5em;
   }
 
   main aside h4 {
@@ -446,20 +431,47 @@ textarea {
     padding: 5px 17px;
   }
 
+  main aside .subs-form form {
+    margin-top: 2em;
+  }
+
+  main aside .subs-form form input[type='email'] {
+    width: 100%;
+  }
+
+  main aside .subs-form form input[type='submit'] {
+    margin-top: 1em;
+    width: 100%;
+    background-color: salmon;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
   /* ----------------- End Main ----------------- */
 
   /* ----------------- Footer ----------------- */
+
 
   footer .footer-row {
     display: grid;
     grid-template-columns: 1fr;
     grid-row: auto;
-    grid-gap: 1.5em;
+    grid-gap: 1em;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
   }
 
   footer .footer-row h4 {
     font-family: 'Nanum Myeongjo', serif;
   }
+
+  footer .footer-row .contact,
+  footer .footer-row .archive,
+  footer .footer-row .social {
+    padding:1em;
+  }
+
 
   footer .footer-row .contact address p,
   footer .footer-row .archive ul li,
@@ -492,7 +504,6 @@ textarea {
     align-items: center;
     border-radius: 40%;
   }
-
 
   footer p.copyright {
     text-align: center;
@@ -612,7 +623,6 @@ textarea {
       font-size: 1rem;
     }
 
-
     header h1 {
       font-size: 2rem;
     }
@@ -620,16 +630,23 @@ textarea {
       font-size: 1.3rem;
     }
 
-    main aside .personal-info img {
-      border-radius: 50%;
-      height: 120px;
-      width: 20%;
+    main .blog-content p {
+      font-size: 1.1rem;
+    }
+
+    main aside .about-me p {
+      font-size: 1rem;
     }
 
     footer .footer-row{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
+    }
+
+    footer .footer-row .archive {
+      border-left: 1px solid grey;
+      border-right: 1px solid grey;
     }
     
   }
@@ -647,13 +664,20 @@ textarea {
 
     nav ul li {
       margin-right: 1em;
+      font-size: .875em;
+      font-size: 'Noto Sans', sans-serif ;
+    }
+
+    nav ul li a {
+      text-align: center;
+      padding: 5px 13p;
     }
 
     main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto auto auto;
-      grid-gap: 1em;
+      grid-gap: 1.5em;
       grid-template-areas: 
       'rc rc asd'
       'fa fa asd'
@@ -663,17 +687,20 @@ textarea {
     main section.recent-post {
       grid-area: rc;
       margin-top: 0;
-      border: 1px solid grey;
     }
 
     main section.favourite-post {
       grid-area: fa;
-      border: 1px solid red;
     }
 
     main section.favourite-post .blog-wrapper {
       display: flex;
       flex-flow: row wrap;
+    }
+
+    main .blog-content p {
+      font-size: 0.875rem;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     main section.favourite-post .blog-wrapper .blog-content {
@@ -682,7 +709,6 @@ textarea {
 
     main section.featured-post {
       grid-area: fea;
-      border: 1px solid salmon;
     }
 
     main section.featured-post .blog-wrapper {
@@ -699,18 +725,17 @@ textarea {
       grid-area: asd;
     }
 
-    main aside .personal-info img {
-      border-radius: 50%;
-      height: 120px;
-      width: 20%;
-    }
-
     main aside.category {
       grid-area: sd;
     }
 
     footer {
       margin-top: 2em;
+    }
+
+    footer .footer-row .archive {
+      border-left: 1px solid grey;
+      border-right: 1px solid grey;
     }
 }
 
