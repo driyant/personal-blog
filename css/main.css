@@ -11,6 +11,12 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 html {
   color: #222;
   font-size: 1em;
@@ -282,8 +288,6 @@ textarea {
     margin-left: 1em;
   }
 
- 
-
   main .blog-content > p {
     margin-left: 0.8em;
     margin-bottom: 1.5em;
@@ -302,10 +306,6 @@ textarea {
     color: darkgray;
   }
 
-  /* main section {
-    box-shadow: 3px 9px #9b9b9b;
-  } */
-
   main aside > div {
     margin-bottom: 2em;
   }
@@ -314,6 +314,11 @@ textarea {
     /* height: 70vh; */
     border: 1px solid grey;
     overflow: hidden;
+  }
+
+  main aside .about-me p {
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
   }
   
   main aside .category {
@@ -330,11 +335,6 @@ textarea {
     padding: 0.5em 0 0 0.5em;
     margin: .5em 0 .5em .5em;
     font-family: 'Nanum Myeongjo', serif;
-  }
-
-  main aside p {
-    padding-left: .8em;
-    font-size: .875rem;
   }
   
   main aside ul li {
@@ -374,7 +374,6 @@ textarea {
     background-color: rgb(255, 255, 255);
   }
   
- 
   main .blog-wrapper h3 {
     text-transform: capitalize;
   }
@@ -437,13 +436,14 @@ textarea {
 
   main aside .subs-form form input[type='email'] {
     width: 100%;
+    height: 30px;
   }
 
   main aside .subs-form form input[type='submit'] {
     margin-top: 1em;
     width: 100%;
     background-color: salmon;
-    height: 40px;
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
     
   }
@@ -636,6 +636,7 @@ textarea {
 
     main aside .about-me p {
       font-size: 1rem;
+      font-family: 'Quicksand', sans-serif;
     }
 
     footer .footer-row{
